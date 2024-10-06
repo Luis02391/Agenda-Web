@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agenda Web</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
     <div class="container">
+      <div class="contactForm">
+        <h1>Agenda de Contactos</h1>
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input type="text" id="apellido" placeholder="Apellido" required />
+        <input type="tel" id="telefono" placeholder="Teléfono" required />
+        <button type="button" id="submitButton">Agregar Contacto</button>
+      </div>
 
-        <div class="contactForm">
-            <h1>Agenda de Contactos</h1>
-            <input type="text" id="nombre" placeholder="Nombre" required>
-            <input type="text" id="apellido" placeholder="Apellido" required>
-            <input type="tel" id="telefono" placeholder="Teléfono" required>
-            <button type="button" id="submitButton">Agregar Contacto</button>
+      <div class="Listado-div">
+        <h2>Listado de Contactos</h2>
+        <div class="Listado">
+          <ul id="contactList"></ul>
         </div>
-
-        <div class="Listado-div">
-            <h2>Listado de Contactos</h2>
-            <div class="Listado">
-                <ul id="contactList"></ul>
-            </div>
-        </div>
-
+      </div>
     </div>
 
     <script src="/js/Agenda.js"></script>
-
-</body>
+  </body>
 </html>
